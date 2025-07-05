@@ -36,7 +36,7 @@ if st.button("Generate Story"):
                 pad_token_id=tokenizer.eos_token_id
             )
         story = tokenizer.decode(output[0], skip_special_tokens=True)
-        st.subheader("🧠 Generated Story")
+        st.subheader("Generated Story")
         st.write(story)
 
         
